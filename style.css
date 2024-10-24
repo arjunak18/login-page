@@ -1,0 +1,122 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Pacifico", cursive;
+  font-weight: 550;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(0, 0, 0);
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1px;
+  bottom: 1px; /* Adjusted to move the container down */
+  padding-inline: 0px;
+  padding-bottom: 0px;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Change to cover to fill the space better */
+  z-index: -1;
+}
+
+.heading {
+  position: absolute;
+  right: 280px; /* Adjusted to center */
+  top: 40px; /* Adjusted for better alignment */
+  font-size: 55px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 7px 5px rgb(0, 0, 0);
+}
+
+.form-division {
+  position: relative;
+  right: 0px; /* Centered the form */
+  top: 200px;
+  padding-inline: 150px; /* Removed excessive padding */
+  padding-block: 10px;
+  /* border: 3px solid black; */
+
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.input-bar {
+  border: 3px solid rgb(170, 170, 170);
+
+  background-color: rgb(230, 230, 230);
+  color: rgb(0, 140, 255);
+  font-size: 20px;
+  display: grid;
+  text-align: left; /* Text alignment changed for better positioning */
+  position: relative;
+  left: 100px;
+  bottom: 70px;
+  /* Centered the input fields */
+  padding-right: 100px;
+  padding-left: 10px; /* Adjusted padding for input fields */
+  padding-block: 10px;
+  border-radius: 10px;
+  font-family: "Pacifico", cursive;
+
+  /* Added margin to separate inputs */
+}
+
+.text {
+  color: black;
+  font-size: 30px;
+  border: none;
+  position: relative;
+  bottom: 20px;
+  right: 70px;
+}
+.button {
+  padding-inline: 40px;
+  padding-block: 0px;
+  margin-bottom:220px;
+  border-radius: 20px;
+  position: relative;
+  bottom: 60px;
+  left: 280px;
+  font-size: 30px;
+  font-family: "Pacifico", cursive;
+  color:white;
+  cursor:pointer;
+  text-shadow: 1px 7px 5px rgb(0, 0, 0);
+  background: linear-gradient(to bottom right, #00d5ff, #0072ff);
+}
+.button:hover{
+  transform: translate(2px, 2px) scale(1.1) ;
+  transition: transform 0.5s ease-in-out;
+  background: linear-gradient(to bottom right, #00d5ff, #ff00d4);
+}
